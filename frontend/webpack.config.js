@@ -12,7 +12,7 @@ module.exports = {
         contentBase: './public'
     },
     resolve: {
-        extensions: ['', '.jsx', 'js'],
+        extensions: ['', '.js', '.jsx'],
         alias: {
             modules: __dirname+ '/node_modules'
         }
@@ -31,8 +31,8 @@ module.exports = {
             }
         },
         {
-            test: /\.css$/,
-            loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
+            test: /.css$/,
+            loader: ExtractTextPlugin.extract("style-loader", "css-loader")
         },
         {
             test: /\.woff|.woff2|.ttf|.eot|.svg*.*$/,
