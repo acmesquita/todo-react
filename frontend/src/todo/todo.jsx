@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import PageHeard from '../template/pageHeard';
+import TodoForm from './todoForm';
+import TodoList from './todoList';
 
 export default class Todo extends Component{
 
@@ -7,6 +9,9 @@ export default class Todo extends Component{
         return (
             <div>
                 <PageHeard name='Tarefas' small='Cadastro'/>
+                <TodoForm />
+                <hr/>
+                <TodoList />
             </div>
         )
     }
