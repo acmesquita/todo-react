@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
+import PageHeard from '../template/pageHeard';
 
 export default class Todo extends Component{
 
     render(){
         return (
             <div>
-                <h1>TODO</h1>
+                <PageHeard name='Tarefas' small='Cadastro'/>
             </div>
         )
     }
